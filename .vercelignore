@@ -1,0 +1,6 @@
+.git/
+.vercel/
+dist/
+AGENTS.md
+MEMORY.md
+.DS_Store

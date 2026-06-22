@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI卷王龙哥的微信小程序、Codex 与 WorkBuddy 实战教程站。">
+  <meta name="theme-color" content="#0b1220">
+  <title>AI卷王龙哥教程站</title>
+  <link rel="stylesheet" href="./styles.css?v=20260622-3">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#/codex" aria-label="AI卷王龙哥教程站首页">
+      <span class="brand-mark" aria-hidden="true">龙</span>
+      <span><strong>AI卷王龙哥</strong><small>AI Native 实战教程站</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="主栏目">
+      <a href="#/codex" data-nav-course="codex">Codex</a>
+      <a href="#/wechat" data-nav-course="wechat">微信小程序</a>
+      <a href="#/workbuddy" data-nav-course="workbuddy">WorkBuddy</a>
+      <a href="#/about" data-nav-course="about">关于我</a>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="course-view theme-wechat" data-view="wechat" hidden>
+      <header class="course-hero">
+        <div>
+          <p class="eyebrow">微信小程序 · 10 课</p>
+          <h1 tabindex="-1">从账号申请到发布上线，再到真实开发案例</h1>
+          <p>先解决主体、认证、类目、审核和发布这些真实卡点，再完成本地存储、云开发、云服务器与微信登录四个案例。</p>
+        </div>
+        <div class="hero-metric"><strong>10</strong><span>完整课程</span></div>
+      </header>
+      <div class="course-toolbar">
+        <label class="search-control"><span>搜索微信小程序课程</span><input type="search" data-search="wechat" placeholder="例如：认证、审核、云开发"></label>
+        <div class="progress-summary" data-progress="wechat"><span>学习进度</span><strong>0 / 10</strong><div><i></i></div></div>
+      </div>
+      <details class="mobile-chapter-menu"><summary>选择课程</summary><nav data-mobile-nav="wechat" aria-label="微信小程序课程导航"></nav></details>
+      <div class="course-layout">
+        <aside class="course-sidebar"><p class="sidebar-label">学习路径</p><nav data-course-nav="wechat" aria-label="微信小程序课程导航"></nav></aside>
+        <div class="course-content">
+          <div class="empty-state" data-empty="wechat" hidden>没有匹配课程，请更换关键词。</div>
+          <article id="wechatLessonView" class="lesson-card wechat-lesson" data-course="wechat" aria-live="polite"></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-view theme-codex" data-view="codex" hidden>
+      <header class="course-hero">
+        <div>
+          <p class="eyebrow">Codex · 9 章</p>
+          <h1 tabindex="-1">从会对话，到能稳定交付真实项目</h1>
+          <p>掌握入口选择、提示词、项目约束、MCP、Skills 与自动化，并把 Codex 用到企业、自媒体、知识库和 AI 编程。</p>
+        </div>
+        <div class="hero-metric"><strong>9</strong><span>实战章节</span></div>
+      </header>
+      <div class="course-toolbar">
+        <label class="search-control"><span>搜索 Codex 课程</span><input type="search" data-search="codex" placeholder="例如：AGENTS、MCP、Obsidian"></label>
+        <div class="progress-summary" data-progress="codex"><span>学习进度</span><strong>0 / 9</strong><div><i></i></div></div>
+      </div>
+      <details class="mobile-chapter-menu"><summary>选择章节</summary><nav data-mobile-nav="codex" aria-label="Codex 章节导航"></nav></details>
+      <div class="course-layout">
+        <aside class="course-sidebar"><p class="sidebar-label">九章课程</p><nav data-course-nav="codex" aria-label="Codex 章节导航"></nav></aside>
+        <div class="course-content">
+          <div class="empty-state" data-empty="codex" hidden>没有匹配章节，请更换关键词。</div>
+          <div data-lessons="codex">
+<article class="lesson-card module" id="codex-chapter-1" data-course="codex" data-lesson-id="chapter-1" data-keywords="基础一：Codex 是什么，以及该用哪个入口" data-type="basic">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">01</div>
+                  <div>
+                    <h3>基础一：Codex 是什么，以及该用哪个入口</h3>
+                    <p class="module-subtitle">目标：理解 CLI、桌面 App、IDE、Web/Cloud 的差异，知道什么时候用本地，什么时候交给云端。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-1"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>你要掌握</h4>
+                  <ul class="compact-list">
+                    <li>Codex 是会读文件、改文件、跑命令、复查结果的 coding agent，不只是聊天助手。</li>
+                    <li>CLI 适合本地仓库和终端工作；桌面 App 适合长任务、网页验证、文件协作；IDE 适合贴着编辑器改代码。</li>
+                    <li>安全默认值要保守：新项目先用工作区写权限，明确需要时再放宽。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">基础</span><span class="tag gold">CLI</span><span class="tag alt">安全边界</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：给自己的电脑建立 Codex 体检清单</h4>
+                  <p>产出：`codex-setup-checklist.md`，记录安装、登录、Git、Node/Python、浏览器、常用目录和验证命令。</p>
+                  <div class="prompt">请帮我为当前电脑创建 Codex 使用前体检清单。
+要求：
+1. 先识别当前目录、Git 状态、可用运行时和常见工具。
+2. 输出一个 codex-setup-checklist.md。
+3. 每一项写清楚为什么要检查，以及失败时对学习的影响。
+4. 不要修改除清单以外的文件。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>能解释每个 Codex 入口适合什么场景。</li>
+                    <li>能用 `codex doctor` 或等价检查定位本地环境问题。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-2" data-course="codex" data-lesson-id="chapter-2" data-keywords="基础二：提示词、计划、验证闭环" data-type="basic">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">02</div>
+                  <div>
+                    <h3>基础二：提示词、计划、验证闭环</h3>
+                    <p class="module-subtitle">目标：把“我想要”变成 Codex 可执行的目标、上下文、约束和完成标准。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-2"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>你要掌握</h4>
+                  <ul class="compact-list">
+                    <li>四段式提示词：Goal、Context、Constraints、Done when。</li>
+                    <li>复杂任务先计划，简单任务直接执行，避免把所有任务都变成会议。</li>
+                    <li>让 Codex 自己跑验证：测试、lint、截图、页面点击、diff review。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">基础</span><span class="tag gold">Prompt</span><span class="tag alt">验证</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：做一个个人任务看板网页</h4>
+                  <p>产出：一个单文件 `task-board.html`，包含新增任务、状态切换、筛选、localStorage 保存。</p>
+                  <div class="prompt">Goal: 做一个单文件个人任务看板网页。
+Context: 当前目录为空，优先使用原生 HTML/CSS/JS。
+Constraints: 不引入构建工具；移动端可用；按钮文字不能溢出。
+Done when: 页面可打开，能新增任务、切换状态、筛选待办/完成，刷新后数据仍在。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>你能指出 Codex 每一步验证了什么。</li>
+                    <li>页面在手机宽度下不重叠、不遮挡。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-3" data-course="codex" data-lesson-id="chapter-3" data-keywords="进阶一：AGENTS.md、MEMORY.md 与项目约束" data-type="advanced">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">03</div>
+                  <div>
+                    <h3>进阶一：AGENTS.md、MEMORY.md 与项目约束</h3>
+                    <p class="module-subtitle">目标：把反复说的工作方式写成项目规则，让 Codex 每次进场就知道边界。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-3"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>你要掌握</h4>
+                  <ul class="compact-list">
+                    <li>`AGENTS.md` 放团队规则、验证命令、禁区和完成定义；越靠近子目录的规则越具体。</li>
+                    <li>`MEMORY.md` 适合记项目决策、踩坑、资源位置；凭据只记位置不记值。</li>
+                    <li>规则不是越多越好，真正重复两三次的错误才值得沉淀。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">进阶</span><span class="tag gold">AGENTS.md</span><span class="tag alt">记忆</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：为你的 AI Native 工作区建立规则系统</h4>
+                  <p>产出：`AGENTS.md`、`MEMORY.md`、`docs/prompt-template.md`。</p>
+                  <div class="prompt">请审计当前工作区，并建立 AI Native 工作规则系统。
+先读现有 AGENTS.md / MEMORY.md。
+然后补充：
+1. 项目启动检查流程。
+2. Codex 修改文件前后的验证要求。
+3. MEMORY.md 的新增规则和禁止记录内容。
+4. 一个可复用的四段式提示词模板。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>新线程打开项目后，Codex 能主动读规则和记忆。</li>
+                    <li>规则能减少重复沟通，而不是制造额外负担。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-4" data-course="codex" data-lesson-id="chapter-4" data-keywords="进阶二：MCP、插件与外部工具连接" data-type="advanced">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">04</div>
+                  <div>
+                    <h3>进阶二：MCP、插件与外部工具连接</h3>
+                    <p class="module-subtitle">目标：让 Codex 访问文档、浏览器、GitHub、Figma、Google Drive、Slack 等外部上下文。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-4"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>你要掌握</h4>
+                  <ul class="compact-list">
+                    <li>MCP 是给 Codex 增加工具和上下文的协议，配置在 `config.toml` 或通过 `codex mcp` 管理。</li>
+                    <li>插件是更完整的分发单元，可以打包技能、应用连接和 MCP 服务。</li>
+                    <li>外部工具要按最小权限接入，尤其是浏览器、Drive、Slack、GitHub。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">进阶</span><span class="tag gold">MCP</span><span class="tag alt">插件</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：搭建“资料检索到网页更新”工作台</h4>
+                  <p>产出：`docs/resource-pipeline.md`，写清楚资料来源、工具、权限、输出文件和复查步骤。</p>
+                  <div class="prompt">请为“资料检索到网页更新”设计 Codex 工具链。
+包含：
+1. 官方文档用什么工具查。
+2. YouTube/X 资料如何标注来源和更新时间。
+3. 浏览器验证网页时需要哪些 MCP 或插件。
+4. 每个外部工具的权限风险和最小权限建议。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>你能说清 MCP 和插件的区别。</li>
+                    <li>每个连接都能说明为什么需要，以及不给权限会影响什么。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-5" data-course="codex" data-lesson-id="chapter-5" data-keywords="进阶三：Skills、非交互模式与自动化" data-type="advanced">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">05</div>
+                  <div>
+                    <h3>进阶三：Skills、非交互模式与自动化</h3>
+                    <p class="module-subtitle">目标：把稳定流程封装成 Skill，把重复检查交给 `codex exec` 或 Codex 自动化。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-5"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>你要掌握</h4>
+                  <ul class="compact-list">
+                    <li>Skill 适合可复用流程：写作、审查、发布、报表、视频脚本、资料清洗。</li>
+                    <li>`codex exec` 适合脚本、CI、日志总结、结构化输出和流水线。</li>
+                    <li>自动化适合周期性任务，但默认权限要谨慎，先手动跑通再定时。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">进阶</span><span class="tag gold">Skill</span><span class="tag alt">自动化</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：把“每周项目复盘”做成自动化</h4>
+                  <p>产出：`docs/weekly-review-skill.md` 和一条可复制的自动化提示词。</p>
+                  <div class="prompt">请把“每周项目复盘”设计成 Codex 可执行流程。
+输入：Git 变更、MEMORY.md、本周 TODO。
+输出：完成事项、风险、下周建议、需要我确认的问题。
+要求：先给 Skill 结构，再给自动化 prompt，并说明权限风险。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>流程可以独立重复运行，不依赖你每次重新解释。</li>
+                    <li>输出稳定，适合写入周报或项目复盘。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-6" data-course="codex" data-lesson-id="chapter-6" data-keywords="实战一：AI 企业提效知识库与 SOP 助手" data-type="practice">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">06</div>
+                  <div>
+                    <h3>实战一：AI 企业提效知识库与 SOP 助手</h3>
+                    <p class="module-subtitle">目标：把企业重复咨询、交付 SOP、报价说明、会议纪要变成 Codex 可维护的内部系统。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-6"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>业务设计</h4>
+                  <ul class="compact-list">
+                    <li>问题本质：企业提效不是“多用 AI”，而是降低信息查找、文档生产和流程交接成本。</li>
+                    <li>最小系统：`knowledge/` 存 SOP，`templates/` 存报价和纪要，`dashboard.html` 展示入口。</li>
+                    <li>用户影响：新人能按模板交付，管理者能看到流程缺口，重复咨询减少。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">实战</span><span class="tag gold">AI 企业提效</span><span class="tag alt">SOP</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：做一个企业 AI 提效工作台</h4>
+                  <p>产出：`enterprise-ai-dashboard.html`、`knowledge/sop-template.md`、`templates/meeting-summary.md`。</p>
+                  <div class="prompt">请帮我做一个企业 AI 提效工作台。
+场景：咨询公司给客户交付 AI 提效方案。
+功能：
+1. 首页展示 SOP、会议纪要、报价说明、FAQ 四类入口。
+2. 每类入口给出示例模板和 Codex 提示词。
+3. 页面要能被非技术同事直接打开使用。
+4. 说明为什么这些模块能降低企业协作成本。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>页面能让同事不看说明也知道下一步点哪里。</li>
+                    <li>每个模板都有输入、输出、复查项。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-7" data-course="codex" data-lesson-id="chapter-7" data-keywords="实战二：AI 自媒体选题到发布工作流" data-type="practice">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">07</div>
+                  <div>
+                    <h3>实战二：AI 自媒体选题到发布工作流</h3>
+                    <p class="module-subtitle">目标：让 Codex 帮你把选题、资料、短视频脚本、公众号文章、标题和发布检查串成流水线。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-7"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>业务设计</h4>
+                  <ul class="compact-list">
+                    <li>问题本质：自媒体瓶颈通常不是写不出，而是选题验证、资料归档、风格一致和发布检查不稳定。</li>
+                    <li>最小系统：选题库、资料卡、视频脚本模板、公众号排版模板、发布前 checklist。</li>
+                    <li>用户影响：内容生产从“灵感驱动”变成“流程驱动”，稳定性提高。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">实战</span><span class="tag gold">AI 自媒体</span><span class="tag alt">工作流</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：做一个 Codex 内容工厂</h4>
+                  <p>产出：`content-studio.html`、`content/topic-bank.md`、`content/video-script-template.md`、`content/wechat-checklist.md`。</p>
+                  <div class="prompt">请创建一个 AI 自媒体内容工厂。
+主题：AI Native 工作者成长。
+要求：
+1. 设计选题库字段：标题、目标用户、痛点、案例、资料链接、状态。
+2. 做短视频脚本模板和公众号文章模板。
+3. 做一个本地网页，用来浏览流程和复制提示词。
+4. 每个环节写清输入、输出和质量检查。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>一个选题能从资料变成短视频脚本和公众号大纲。</li>
+                    <li>质量检查能发现空泛、无案例、无来源的问题。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-8" data-course="codex" data-lesson-id="chapter-8" data-keywords="实战三：Obsidian + Codex 记忆库与智能体协作" data-type="practice">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">08</div>
+                  <div>
+                    <h3>实战三：Obsidian + Codex 记忆库与智能体协作</h3>
+                    <p class="module-subtitle">目标：用 Obsidian 承载长期知识，用 Codex 维护结构化记忆，并用子智能体分工处理大任务。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-8"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>业务设计</h4>
+                  <ul class="compact-list">
+                    <li>问题本质：AI 工作者需要的是“可检索、可复用、可审计”的个人操作系统，不是散落聊天记录。</li>
+                    <li>最小系统：`Codex/AGENTS.md`、`Codex/MEMORY.md`、`Codex/Projects/`、`Codex/Templates/`。</li>
+                    <li>用户影响：Codex 能沿用你的偏好、项目决策和历史踩坑，减少从零解释。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">实战</span><span class="tag gold">Obsidian</span><span class="tag alt">AI 智能体</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：搭建个人 Codex 记忆库</h4>
+                  <p>产出：Obsidian 文件夹结构、记忆规则、项目卡模板、子智能体分工提示词。</p>
+                  <div class="prompt">请为我的 Obsidian 创建 Codex 记忆库方案。
+要求：
+1. 设计文件夹和命名规则。
+2. 写 AGENTS.md：说明什么时候读取记忆、什么时候写回记忆。
+3. 写 MEMORY.md 模板：只记录决策、踩坑、资源位置，不记录凭据值。
+4. 给一个三智能体协作提示词：资料研究、方案设计、质量审查。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>记忆库不会泄露凭据，也不会复制代码里已有的信息。</li>
+                    <li>子智能体只返回高信号摘要，不把噪音塞回主线程。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+<article class="lesson-card module" id="codex-chapter-9" data-course="codex" data-lesson-id="chapter-9" data-keywords="实战四：AI 编程，网站与小程序从需求到上线" data-type="practice">
+              <div class="module-header">
+                <div class="module-title">
+                  <div class="module-num">09</div>
+                  <div>
+                    <h3>实战四：AI 编程，网站与小程序从需求到上线</h3>
+                    <p class="module-subtitle">目标：用 Codex 完成产品需求拆解、页面实现、交互验证、代码审查和上线材料。</p>
+                  </div>
+                </div>
+                <label class="check"><input type="checkbox" data-done="chapter-9"> 完成</label>
+              </div>
+              <div class="module-body">
+                <div>
+                  <h4>业务设计</h4>
+                  <ul class="compact-list">
+                    <li>问题本质：AI 编程的关键不是“让 AI 写代码”，而是让它围绕真实用户流程闭环验证。</li>
+                    <li>最小系统：需求文档、页面原型、数据结构、实现、截图检查、发布 checklist。</li>
+                    <li>用户影响：你能从想法更快走到可演示产品，同时保留可 review 的代码和测试证据。</li>
+                  </ul>
+                  <div class="tags"><span class="tag">实战</span><span class="tag gold">AI 编程</span><span class="tag alt">网站/小程序</span></div>
+                </div>
+                <div class="case-panel">
+                  <h4>案例：做一个 AI 课程报名网站，并规划小程序版本</h4>
+                  <p>产出：`course-site/` 网页、`miniapp-spec.md` 小程序规格、`release-checklist.md` 上线清单。</p>
+                  <div class="prompt">请从零实现一个 AI 课程报名网站，并规划小程序版本。
+用户：想系统学习 AI Native 工作方式的职场人。
+要求：
+1. 先写需求和页面信息架构。
+2. 实现首页、课程页、报名表单和 FAQ。
+3. 给出小程序页面结构、数据字段和交互流程。
+4. 用浏览器验证桌面和移动端，不通过就迭代。
+5. 最后 review diff，列出上线前风险。</div>
+                  <h4>验收标准</h4>
+                  <ul class="compact-list">
+                    <li>网站第一屏能直接完成“了解课程并报名”的用户任务。</li>
+                    <li>小程序规格足够让下一轮 Codex 继续实现。</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <section class="course-supplement" id="codex-resources">
+          <h2>YouTube、X 与官方资料库</h2>
+          <div class="resources">
+            <div class="resource-card">
+              <h3>官方优先</h3>
+              <ul>
+                <li><a href="https://developers.openai.com/codex/learn/best-practices" target="_blank" rel="noreferrer">Codex Best Practices</a></li>
+                <li><a href="https://developers.openai.com/codex/cli" target="_blank" rel="noreferrer">Codex CLI</a></li>
+                <li><a href="https://developers.openai.com/codex/guides/agents-md" target="_blank" rel="noreferrer">AGENTS.md 指南</a></li>
+                <li><a href="https://developers.openai.com/codex/skills" target="_blank" rel="noreferrer">Agent Skills</a></li>
+                <li><a href="https://developers.openai.com/codex/mcp" target="_blank" rel="noreferrer">MCP</a></li>
+                <li><a href="https://github.com/openai/codex" target="_blank" rel="noreferrer">OpenAI Codex GitHub</a></li>
+              </ul>
+            </div>
+            <div class="resource-card">
+              <h3>YouTube 教程</h3>
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=px7XlbYgk7I" target="_blank" rel="noreferrer">Getting started with Codex</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WvMqA4Xwx_k" target="_blank" rel="noreferrer">Build Hour: Codex</a></li>
+                <li><a href="https://www.youtube.com/watch?v=iqNzfK4_meQ" target="_blank" rel="noreferrer">Using Codex CLI with GPT-5-Codex</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tIb_TzVNbDM" target="_blank" rel="noreferrer">OpenAI Codex Tutorial #1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=hia0PznjGt8" target="_blank" rel="noreferrer">OpenAI Codex Tutorial #4: CLI</a></li>
+                <li><a href="https://www.youtube.com/watch?v=sTE0G95uEIw" target="_blank" rel="noreferrer">Codex CLI Beginner Guide</a></li>
+              </ul>
+            </div>
+            <div class="resource-card">
+              <h3>X 讨论与案例</h3>
+              <ul>
+                <li><a href="https://x.com/gdb/status/1978572465073799663" target="_blank" rel="noreferrer">Codex CLI 快速上手讨论</a></li>
+                <li><a href="https://x.com/OpenAIDevs/status/2046059336217354453" target="_blank" rel="noreferrer">Codex Super-App 入门串</a></li>
+                <li><a href="https://x.com/derrickcchoi/status/2031023512534634758" target="_blank" rel="noreferrer">新手核心习惯指南</a></li>
+                <li><a href="https://x.com/Voxyz_ai/article/2060753730643837205" target="_blank" rel="noreferrer">AGENTS.md 写法经验</a></li>
+                <li><a href="https://x.com/ziwenxu_/article/2053241837453029439" target="_blank" rel="noreferrer">Codex + Obsidian 记忆库</a></li>
+                <li><a href="https://x.com/jxnlco/article/2066970432855581052" target="_blank" rel="noreferrer">Codex 控制浏览器/电脑思路</a></li>
+              </ul>
+            </div>
+          </div>
+          <p>使用建议：官方资料负责事实，YouTube 负责演示，X 负责发现新玩法。看到 X 上的技巧时，先判断它是“个人偏好”还是“官方能力”，再写进自己的 `AGENTS.md` 或 Skill。</p>
+        </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-view theme-workbuddy" data-view="workbuddy" hidden>
+      <header class="course-hero">
+        <div>
+          <p class="eyebrow">WorkBuddy · 9 章</p>
+          <h1 tabindex="-1">把能聊天的 AI，变成能交付的桌面智能体</h1>
+          <p>从任务闭环、上下文和知识库出发，连接专家、技能、连接器与自动化，完成四个可验收的业务实战。</p>
+        </div>
+        <div class="hero-metric"><strong>9</strong><span>实战章节</span></div>
+      </header>
+      <div class="course-toolbar">
+        <label class="search-control"><span>搜索 WorkBuddy 课程</span><input type="search" data-search="workbuddy" placeholder="例如：知识库、连接器、自媒体"></label>
+        <div class="progress-summary" data-progress="workbuddy"><span>学习进度</span><strong>0 / 9</strong><div><i></i></div></div>
+      </div>
+      <details class="mobile-chapter-menu"><summary>选择章节</summary><nav data-mobile-nav="workbuddy" aria-label="WorkBuddy 章节导航"></nav></details>
+      <div class="course-layout">
+        <aside class="course-sidebar"><p class="sidebar-label">九章课程</p><nav data-course-nav="workbuddy" aria-label="WorkBuddy 章节导航"></nav></aside>
+        <div class="course-content">
+          <div class="empty-state" data-empty="workbuddy" hidden>没有匹配章节，请更换关键词。</div>
+          <div data-lessons="workbuddy">
+<article class="lesson-card chapter" id="workbuddy-chapter-1" data-course="workbuddy" data-lesson-id="chapter-1" data-keywords="基础 快速开始 安装 登录 界面 任务">
+          <div class="chapter-head">
+            <span class="chapter-no">01</span>
+            <div>
+              <p class="chapter-type">基础篇</p>
+              <h2>认识 WorkBuddy：从工具到桌面智能体</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="1" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>你要掌握什么</h3>
+              <p>
+                WorkBuddy 的本质是“能规划、能操作本地文件、能交付结果”的桌面智能体。学习第一章的目标不是熟悉每个按钮，而是知道什么时候该用普通任务、什么时候该用助理、什么时候要指定工作目录。
+              </p>
+              <ul>
+                <li>主界面由侧边栏、对话区、右侧结果区组成。</li>
+                <li>任务可以处理文档、表格、PPT、数据、代码、设计和批量文件。</li>
+                <li>工作目录决定它能读取和写入哪些项目文件。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>案例：第一次让 WorkBuddy 交付文件</h3>
+              <p>准备一个文件夹 `WorkBuddy练习/01-会议纪要`，放入一份会议录音转写或会议纪要文本。</p>
+              <pre><code>请读取当前文件夹中的会议纪要，整理为一份可交付的行动清单。
+要求：
+1. 按“已确认事项 / 待确认问题 / 负责人 / 截止时间”输出表格；
+2. 标出信息来源，不要补充纪要中没有的信息；
+3. 生成 Markdown 和 docx 两个版本；
+4. 完成后告诉我文件保存在哪里。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>验收清单</h3>
+              <label><input type="checkbox" /> 能找到任务列表、对话区和结果区。</label>
+              <label><input type="checkbox" /> 能指定工作目录并确认产物保存位置。</label>
+              <label><input type="checkbox" /> 能区分“继续追问”和“新建任务”。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Quickstart" target="_blank" rel="noreferrer">官方：快速开始</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Create-Task" target="_blank" rel="noreferrer">官方：创建任务</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-2" data-course="workbuddy" data-lesson-id="chapter-2" data-keywords="基础 任务 对话 结果 产物 文件 预览 验收">
+          <div class="chapter-head">
+            <span class="chapter-no">02</span>
+            <div>
+              <p class="chapter-type">基础篇</p>
+              <h2>任务闭环：创建、追问、查看结果、验收</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="2" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>任务描述四件套</h3>
+              <p>一个可执行任务通常包含：目标、输入、约束、输出格式。WorkBuddy 可以持续追问，你也应该把修改意见留在同一个任务里，让它继承上下文。</p>
+              <ul>
+                <li>目标：让它知道最终要交付什么。</li>
+                <li>输入：文件、截图、链接、知识库资料或文字说明。</li>
+                <li>约束：字数、风格、格式、不要做什么。</li>
+                <li>验收：如何判断结果能不能直接用。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>案例：把销售 CSV 做成分析报告</h3>
+              <pre><code>请分析当前文件夹中的销售数据 CSV，生成一份管理层能看懂的分析报告。
+输出要求：
+1. 先检查字段含义和数据质量；
+2. 找出销售额、客单价、转化率、复购率的关键变化；
+3. 至少生成 3 张图表，并解释每张图的结论；
+4. 输出 Excel 数据透视表、Markdown 分析报告和一页 PPT 汇报摘要；
+5. 在最后列出需要我人工确认的数据口径。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>验收清单</h3>
+              <label><input type="checkbox" /> 能在产物区查看文档、表格或 PPT。</label>
+              <label><input type="checkbox" /> 能在变更区检查文件修改。</label>
+              <label><input type="checkbox" /> 能用追问让结果变得更符合业务口径。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Conversation" target="_blank" rel="noreferrer">官方：任务对话</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Results" target="_blank" rel="noreferrer">官方：结果查看</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Task-Management" target="_blank" rel="noreferrer">官方：任务管理</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-3" data-course="workbuddy" data-lesson-id="chapter-3" data-keywords="进阶 上下文 ima 知识库 记忆 资料 复用">
+          <div class="chapter-head">
+            <span class="chapter-no">03</span>
+            <div>
+              <p class="chapter-type">进阶篇</p>
+              <h2>上下文工程：文件、截图、ima 知识库和记忆</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="3" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>为什么先做知识库</h3>
+              <p>重复任务的瓶颈不是“不会写提示词”，而是每次都重新解释背景。ima 知识库适合沉淀选题、客户资料、项目文档、风格画像和复盘报告。</p>
+              <ul>
+                <li>知识库按任务目标建，不要一开始做大而全的资料仓库。</li>
+                <li>第一批资料控制在 10-20 条，优先来源清楚、近期有效、内容完整。</li>
+                <li>有复用价值的产物要回存知识库，形成知识复利。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>案例：搭建“AI 工具教程素材库”</h3>
+              <pre><code>请基于我选择的 ima 知识库资料，帮我整理一份“AI 工具教程素材库”的结构建议。
+输出：
+1. 推荐知识库名称；
+2. 一级分类和每类应收集的资料；
+3. 哪些资料适合直接保存，哪些需要人工核对；
+4. 后续每次生成教程后，哪些产物应该回存；
+5. 给出一份可复制的“回存 ima 前检查清单”。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>验收清单</h3>
+              <label><input type="checkbox" /> 能从 ima 添加资料到任务。</label>
+              <label><input type="checkbox" /> 能把产物上传回 ima。</label>
+              <label><input type="checkbox" /> 能区分“项目事实”和“个人偏好”应如何沉淀。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/01-Workbuddy-IMA-Basic-Guide" target="_blank" rel="noreferrer">官方：ima 功能指引</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/02-Build-Knowledge-Base" target="_blank" rel="noreferrer">官方：知识复利技巧</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-4" data-course="workbuddy" data-lesson-id="chapter-4" data-keywords="进阶 专家 专家团 技能 skill 角色 工具">
+          <div class="chapter-head">
+            <span class="chapter-no">04</span>
+            <div>
+              <p class="chapter-type">进阶篇</p>
+              <h2>专家、专家团和技能：让 AI 既懂行又能动手</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="4" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>三种能力怎么选</h3>
+              <p>专家解决“用什么视角判断”，专家团解决“复杂任务如何分工”，技能解决“让 AI 具备具体工具能力”。复杂任务先找专家团，涉及外部操作再启用必要技能。</p>
+              <ul>
+                <li>专家：单点专业判断，比如法务审阅、营销策略、产品分析。</li>
+                <li>专家团：多角色协同，比如选题、写作、配图、改编、排版。</li>
+                <li>技能：封装脚本或工作流，比如发送邮件、读写文件、调用第三方 API。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>案例：让专家团评审一份增长方案</h3>
+              <pre><code>请召唤适合的营销/增长专家团，评审当前文件夹里的《增长方案.md》。
+请从以下角度输出：
+1. 目标用户是否清晰；
+2. 渠道策略是否匹配预算和资源；
+3. 内容节奏是否能持续执行；
+4. 数据指标是否能验收；
+5. 风险、缺口和优先修改建议。
+请最终生成一份“评审报告”和一份“修改版方案大纲”。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>验收清单</h3>
+              <label><input type="checkbox" /> 能判断一个任务该用普通任务、专家还是专家团。</label>
+              <label><input type="checkbox" /> 安装技能前会检查来源、权限和数据外发范围。</label>
+              <label><input type="checkbox" /> 能只启用当前任务需要的技能，降低误调用概率。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Expert-Center" target="_blank" rel="noreferrer">官方：专家</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market" target="_blank" rel="noreferrer">官方：技能</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-5" data-course="workbuddy" data-lesson-id="chapter-5" data-keywords="进阶 连接器 自动化 助理 微信 远程 MCP QQ邮箱 腾讯会议">
+          <div class="chapter-head">
+            <span class="chapter-no">05</span>
+            <div>
+              <p class="chapter-type">进阶篇</p>
+              <h2>连接器、自动化和远程助理：把重复工作变成系统</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="5" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>从“用一次”到“每天自动跑”</h3>
+              <p>连接器把外部数据接进来，自动化按时间触发，助理让你在手机上远程下达任务。它们适合日报、周报、资料汇总、邮件筛选、会议纪要和内容选题。</p>
+              <ul>
+                <li>连接器支持邮箱、腾讯文档、腾讯会议、TAPD 等服务和自定义 MCP。</li>
+                <li>自动化任务包含名称、工作空间、提示词、模型/技能、定时规则和推送设置。</li>
+                <li>远程助理适合临时触发，但电脑要保持开机并运行 WorkBuddy。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>案例：每天 8:30 自动生成工作简报</h3>
+              <pre><code>自动化任务名称：每日客户与项目风险简报
+定时规则：工作日 08:30
+工作空间：WorkBuddy自动化/客户简报
+提示词：
+请读取昨日 18:00 至现在的 QQ 邮箱、腾讯会议纪要和项目文档更新。
+输出：
+1. 需要今天处理的客户消息；
+2. 可能影响交付进度的风险；
+3. 需要回复或确认的问题；
+4. 今日优先级 Top 5；
+5. 保存为 Markdown，并推送到 WorkBuddy 小程序。
+注意：只使用连接器中能读取到的信息，不要编造客户意图。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>验收清单</h3>
+              <label><input type="checkbox" /> 能授权并启停一个连接器。</label>
+              <label><input type="checkbox" /> 自动化先低频试运行，再扩大频率。</label>
+              <label><input type="checkbox" /> 涉及文件删除、发送消息、资金操作时保留人工确认。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector" target="_blank" rel="noreferrer">官方：连接器</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide" target="_blank" rel="noreferrer">官方：自动化</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/WeixinBot-Guide" target="_blank" rel="noreferrer">官方：微信助理</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-6" data-course="workbuddy" data-lesson-id="chapter-6" data-keywords="实战 企业提效 周报 会议 销售 客户 流程">
+          <div class="chapter-head">
+            <span class="chapter-no">06</span>
+            <div>
+              <p class="chapter-type">实战案例</p>
+              <h2>AI 企业提效：从会议、邮件到周报的自动化闭环</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="6" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>项目目标</h3>
+              <p>搭建一个“企业经营助理”：每天汇总消息和风险，每周生成经营周报，每次会议后自动整理纪要和行动项。关键不是省一次时间，而是减少重复搜索、重复整理和重复解释。</p>
+              <ul>
+                <li>输入：邮箱、会议纪要、腾讯文档、项目文件夹。</li>
+                <li>处理：自动化任务 + 连接器 + ima 项目知识库。</li>
+                <li>输出：日报、会议行动项、周报 PPT、风险清单。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>完整任务提示词</h3>
+              <pre><code>请扮演我的企业经营助理，基于当前工作空间和已授权连接器，生成本周经营周报。
+范围：
+1. 本周会议纪要；
+2. 客户邮件和待回复事项；
+3. 项目进度文档；
+4. 销售/运营数据表。
+交付物：
+1. 经营周报 Markdown；
+2. 10 页以内汇报 PPT；
+3. 风险清单 Excel；
+4. 下周优先级行动项。
+要求：
+- 事实和判断分开；
+- 每个风险都要写来源；
+- 不确定的信息列入“待确认”；
+- 生成后给出哪些内容应该保存回 ima 项目知识库。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>项目验收</h3>
+              <label><input type="checkbox" /> 周报可以直接发给团队看。</label>
+              <label><input type="checkbox" /> 每条行动项有负责人、截止时间和来源。</label>
+              <label><input type="checkbox" /> 产物已回存项目知识库，方便下周复用。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/03-OPC-One-Day" target="_blank" rel="noreferrer">官方：OPC 攻略</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector" target="_blank" rel="noreferrer">官方：连接器</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-7" data-course="workbuddy" data-lesson-id="chapter-7" data-keywords="实战 自媒体 公众号 小红书 短视频 选题 内容 创作">
+          <div class="chapter-head">
+            <span class="chapter-no">07</span>
+            <div>
+              <p class="chapter-type">实战案例</p>
+              <h2>AI 自媒体：从选题库到多平台内容生产</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="7" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>项目目标</h3>
+              <p>做一个“专属编辑助理”：每天抓热点，基于你的历史作品提炼风格画像，最后输出公众号、小红书和短视频脚本。核心是让 AI 读懂你的长期素材，而不是每次临时模仿。</p>
+              <ul>
+                <li>建库：选题资料、优质参考、历史作品、采访记录。</li>
+                <li>画像：提炼标题、开头、结构、论证方式和表达节奏。</li>
+                <li>交付：公众号文章、小红书图文、短视频口播、配图需求。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>完整任务提示词</h3>
+              <pre><code>请结合 ima 中“AI Native 个人品牌素材库”的资料和“创作风格画像”，完成一期内容策划与生产。
+主题：AI Native 工作者如何把重复 3 遍的事自动化
+目标读者：想提升效率但还没有系统工作流的职场人
+交付：
+1. 10 个标题，其中 3 个偏公众号，3 个偏小红书，4 个偏短视频；
+2. 1 篇 1800 字公众号正文；
+3. 1 份小红书图文脚本，包含封面标题和 6 页分页文案；
+4. 1 份 60 秒短视频口播脚本；
+5. 配图建议和发布检查清单。
+要求：
+- 使用知识库已有资料，不编造数据；
+- 保留我的表达风格，但不要机械复刻；
+- 最后告诉我哪些产物应该保存回 ima。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>项目验收</h3>
+              <label><input type="checkbox" /> 输出覆盖至少 3 个内容平台。</label>
+              <label><input type="checkbox" /> 风格画像可长期复用。</label>
+              <label><input type="checkbox" /> 新产物回存后能帮助下一次选题避重。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/04-Creator-Strategy" target="_blank" rel="noreferrer">官方：创作者攻略</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide" target="_blank" rel="noreferrer">官方：自动化</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-8" data-course="workbuddy" data-lesson-id="chapter-8" data-keywords="实战 编程 网站 网页 原型 代码 部署">
+          <div class="chapter-head">
+            <span class="chapter-no">08</span>
+            <div>
+              <p class="chapter-type">实战案例</p>
+              <h2>AI 编程：从需求到一个可预览的网站</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="8" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>项目目标</h3>
+              <p>用 WorkBuddy 完成一个网站从需求、信息架构、界面、代码到预览验收的闭环。对用户的影响是：你不用先会完整工程化，也能把想法变成可点击页面，再逐步迭代。</p>
+              <ul>
+                <li>先让它生成 PRD 和页面结构，再写代码。</li>
+                <li>要求它启动本地预览并在预览区检查页面。</li>
+                <li>用变更区验收文件，不满意就在同一任务里继续追问。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>完整任务提示词</h3>
+              <pre><code>请帮我开发一个“AI 自动化案例库”静态网站。
+功能：
+1. 首页展示案例分类：企业提效、自媒体、编程、知识管理；
+2. 每个案例卡片包含场景、输入、自动化流程、产物和可复制提示词；
+3. 支持关键词搜索和分类筛选；
+4. 移动端体验良好；
+5. 不需要后端，先用静态 JSON 数据。
+交付：
+1. 需求说明；
+2. 信息架构；
+3. 可运行的 HTML/CSS/JS 或合适的前端项目；
+4. 启动预览并检查桌面和手机布局；
+5. 最后列出后续可以接入的功能。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>项目验收</h3>
+              <label><input type="checkbox" /> 页面能在预览区打开，不是只有代码。</label>
+              <label><input type="checkbox" /> 搜索和筛选真实可用。</label>
+              <label><input type="checkbox" /> 移动端没有文字溢出或元素重叠。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Results" target="_blank" rel="noreferrer">官方：结果查看</a>
+            <a href="https://www.codebuddy.cn/docs/ide/Introduction" target="_blank" rel="noreferrer">官方：CodeBuddy 编程能力概览</a>
+          </footer>
+        </article>
+<article class="lesson-card chapter" id="workbuddy-chapter-9" data-course="workbuddy" data-lesson-id="chapter-9" data-keywords="实战 编程 小程序 产品 原型 需求 云开发">
+          <div class="chapter-head">
+            <span class="chapter-no">09</span>
+            <div>
+              <p class="chapter-type">实战案例</p>
+              <h2>AI 编程：从业务流程到小程序方案</h2>
+            </div>
+            <label class="done-toggle"><input type="checkbox" data-chapter="9" /> 学完</label>
+          </div>
+          <div class="chapter-body">
+            <div class="lesson">
+              <h3>项目目标</h3>
+              <p>把一个小程序想法拆成用户流程、数据结构、页面、接口和验收标准。即使暂时不直接开发，也能先得到产品规格和可执行任务拆解。</p>
+              <ul>
+                <li>先定义用户角色和核心路径，再让 AI 生成页面。</li>
+                <li>把数据表、接口、权限和异常状态写清楚。</li>
+                <li>让 WorkBuddy 输出开发任务清单，后续可以交给 CodeBuddy IDE 或开发者实现。</li>
+              </ul>
+            </div>
+            <div class="case-box">
+              <h3>完整任务提示词</h3>
+              <pre><code>请为我设计一个“AI 工作流打卡”微信小程序方案。
+目标用户：想把重复工作自动化的职场人
+核心功能：
+1. 创建自动化目标；
+2. 记录每次用 AI 省下的时间；
+3. 收藏可复用提示词；
+4. 每周生成效率复盘；
+5. 分享一个工作流模板给朋友。
+请输出：
+1. PRD；
+2. 用户流程图文字版；
+3. 页面清单和每个页面的组件；
+4. 数据模型；
+5. 接口清单；
+6. MVP 开发任务拆解；
+7. 风险和人工验收清单。
+如果要继续开发，请给出适合交给 AI 编程工具的下一步提示词。</code></pre>
+              <button class="copy-btn" data-copy>复制提示词</button>
+            </div>
+            <div class="checklist">
+              <h3>项目验收</h3>
+              <label><input type="checkbox" /> PRD 能让开发者理解并估算。</label>
+              <label><input type="checkbox" /> 数据模型覆盖核心业务对象。</label>
+              <label><input type="checkbox" /> MVP 任务能拆到可执行粒度。</label>
+            </div>
+          </div>
+          <footer class="chapter-foot">
+            <a href="https://www.codebuddy.cn/docs/ide/Introduction" target="_blank" rel="noreferrer">官方：CodeBuddy 产品矩阵</a>
+            <a href="https://www.codebuddy.cn/docs/workbuddy/Create-Task" target="_blank" rel="noreferrer">官方：创建任务</a>
+          </footer>
+        </article>
+          </div>
+          <section class="course-supplement templates" aria-label="通用提示词模板">
+        <h2>通用提示词模板</h2>
+        <div class="template-grid">
+          <article>
+            <h3>一次性任务模板</h3>
+            <pre><code>请帮我完成【任务目标】。
+输入材料：【文件/链接/截图/知识库】
+输出格式：【Markdown/Excel/PPT/docx/网页】
+约束条件：【风格/字数/范围/不要做什么】
+验收标准：【怎么判断可用】
+完成后请说明：生成了哪些文件、保存在哪里、哪些内容需要我人工确认。</code></pre>
+          </article>
+          <article>
+            <h3>自动化任务模板</h3>
+            <pre><code>任务名称：【名称】
+执行频率：【每天/每周/每月/指定日期】
+工作空间：【文件夹】
+请定时完成：
+1. 读取【数据源/连接器/知识库】；
+2. 汇总【要关注的信息】；
+3. 生成【交付物】；
+4. 推送到【小程序/指定目录】。
+安全要求：涉及删除、发送、付款、外部发布时先请求人工确认。</code></pre>
+          </article>
+          <article>
+            <h3>复盘回存模板</h3>
+            <pre><code>请复盘本次任务，整理为可保存到 ima 的知识资产。
+输出：
+1. 本次任务目标；
+2. 有效做法；
+3. 踩坑和限制；
+4. 可复用模板；
+5. 下次任务前应确认的问题；
+6. 建议保存到哪个知识库和分类。</code></pre>
+          </article>
+        </div>
+      </section>
+          <section id="workbuddy-sources" class="course-supplement sources" aria-label="官方资料来源">
+        <h2>官方资料来源</h2>
+        <p>本网页基于以下 WorkBuddy / CodeBuddy 官方资料重组和案例化，内容做了学习路径设计，没有复制官方原文。</p>
+        <div class="source-list">
+          <a href="https://www.codebuddy.cn/docs/workbuddy/Quickstart" target="_blank" rel="noreferrer">WorkBuddy 快速开始</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/Create-Task" target="_blank" rel="noreferrer">创建任务</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/Conversation" target="_blank" rel="noreferrer">任务对话</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/Results" target="_blank" rel="noreferrer">结果查看</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Expert-Center" target="_blank" rel="noreferrer">专家</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market" target="_blank" rel="noreferrer">技能</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Connector" target="_blank" rel="noreferrer">连接器</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Automation-Guide" target="_blank" rel="noreferrer">自动化</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/WeixinBot-Guide" target="_blank" rel="noreferrer">微信助理接入指南</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/01-Workbuddy-IMA-Basic-Guide" target="_blank" rel="noreferrer">WorkBuddy × ima 功能指引</a>
+          <a href="https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Knowledge-Base/IMA%20Knowledge%20Base/04-Creator-Strategy" target="_blank" rel="noreferrer">创作者攻略</a>
+          <a href="https://www.codebuddy.cn/docs/ide/Introduction" target="_blank" rel="noreferrer">CodeBuddy 产品能力概览</a>
+        </div>
+      </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-view theme-about" data-view="about" hidden>
+      <header class="about-hero">
+        <div>
+          <p class="eyebrow">关于我</p>
+          <h1 tabindex="-1">AI卷王龙哥</h1>
+          <p class="about-lead">湖北人在深圳，程序员出身，长期实操 AI 提效、自动化和 AI Native 工作流。</p>
+          <div class="about-actions">
+            <a class="button primary" href="https://my.feishu.cn/wiki/YIFswBb6OiVKv7krz2icROQBniy" target="_blank" rel="noopener noreferrer">查看龙哥使用说明书</a>
+            <a class="button secondary" href="https://t.zsxq.com/ZeCzZ" target="_blank" rel="noopener noreferrer">加入免费 AI 自媒体星球</a>
+          </div>
+        </div>
+        <div class="portrait-mark" aria-hidden="true">龙</div>
+      </header>
+      <section class="wechat-contact" aria-labelledby="wechatContactTitle">
+        <div class="wechat-contact-copy">
+          <p class="eyebrow">微信联系</p>
+          <h2 id="wechatContactTitle">扫码加我微信</h2>
+          <p>想交流 AI 培训、AI 获客、自动化、工作流或智能体落地，可以扫码添加好友。</p>
+          <p class="wechat-note"><strong>添加好友时请备注：网站</strong></p>
+        </div>
+        <figure class="qr-card">
+          <img src="./assets/wechat-qr.png" width="932" height="1377" alt="AI卷王龙哥微信二维码，扫码添加好友" loading="lazy">
+          <figcaption>微信扫码添加好友 · 备注：网站</figcaption>
+        </figure>
+      </section>
+      <section class="about-grid" aria-label="作者经历">
+        <article><strong>7 位数</strong><span>公众号副业累计变现</span></article>
+        <article><strong>百万+</strong><span>视频号单视频一天播放</span></article>
+        <article><strong>50 场</strong><span>2025 年 AI 线下实操局</span></article>
+        <article><strong>1000+ 人次</strong><span>AI 实操触达与训练</span></article>
+      </section>
+      <section class="about-sections">
+        <article>
+          <p class="eyebrow">身份与经历</p>
+          <h2>从程序员到 AI 实操教练</h2>
+          <p>万人 AI 社群 OpenClaw 教练，N8N、RPA 与智能体教练，工信部人工智能训练师（高级）。拥有公众号 10 万粉、私域 2 万，并持续把真实业务方法沉淀为可复用教程。</p>
+        </article>
+        <article>
+          <p class="eyebrow">能提供什么</p>
+          <h2>围绕业务结果做 AI 落地</h2>
+          <ul>
+            <li>AI 培训与团队实操工作坊</li>
+            <li>AI 获客与内容增长体系</li>
+            <li>N8N、RPA 与自动化咨询</li>
+            <li>工作流、智能体与业务方案定制</li>
+          </ul>
+        </article>
+        <article>
+          <p class="eyebrow">工作哲学</p>
+          <h2>把任何重复 3 遍的事 AI 化</h2>
+          <p>不把 AI 当成聊天玩具，而是把它接入资料、流程、工具和验收标准，最终形成能持续复用的个人或团队生产系统。</p>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>AI卷王龙哥教程站 · 从教程到可复用的 AI Native 工作系统</p>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="./app.js?v=20260622-3"></script>
+</body>
+</html>
