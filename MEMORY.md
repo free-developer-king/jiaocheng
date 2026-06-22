@@ -41,6 +41,7 @@
 - 2026-06-22：用户授权在“关于我”公开微信二维码，源文件位于 `/Users/longge/Desktop/微信5.png`；页面提示访客扫码加微信并备注“网站”。二维码按原始 PNG 部署，避免二次压缩影响识别。
 - 2026-06-22：`ailongge.vercel.app` 最初作为 deployment alias 时受项目 SSO 保护并返回 401；最终通过重命名项目并将该域名添加为项目正式域名解决。线上验证根地址默认进入 Codex，二维码原图加载完成且无控制台错误。
 - 2026-06-22：根据用户反馈，顶部导航顺序调整为“Codex、微信小程序、WorkBuddy、关于我”；默认栏目和品牌首页入口仍为 Codex。
+- 2026-06-22：GitHub 空仓库已完成首次初始化，代码推送到 `free-developer-king/jiaocheng` 的 `main` 分支；本地 `main` 已跟踪 `origin/main`。
 
 ## 外部资源
 
