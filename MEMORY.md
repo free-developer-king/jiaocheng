@@ -29,6 +29,7 @@
 - 2026-06-22：用户已授权将统一教程站部署到 Vercel 生产环境；三个旧站保持不变。
 - Vercel 登录邮箱仅用于部署账号识别，不作为公开联系方式展示；凭据由本机 Vercel CLI 管理，项目文件和记忆不记录凭据值。
 - 2026-06-22：用户授权将项目代码提交并推送到 GitHub 仓库 `https://github.com/free-developer-king/jiaocheng.git`；远端在首次推送前为空仓库。
+- 2026-06-25：用户授权通过 Netlify 部署统一教程站，现有 Vercel 正式站保留，不做下线或域名迁移。当前会话的 Netlify 插件未暴露可调用工具，改用 Netlify 官方 CLI 完成同一部署目标。
 
 ## 实施记录
 
@@ -42,6 +43,8 @@
 - 2026-06-22：`ailongge.vercel.app` 最初作为 deployment alias 时受项目 SSO 保护并返回 401；最终通过重命名项目并将该域名添加为项目正式域名解决。线上验证根地址默认进入 Codex，二维码原图加载完成且无控制台错误。
 - 2026-06-22：根据用户反馈，顶部导航顺序调整为“Codex、微信小程序、WorkBuddy、关于我”；默认栏目和品牌首页入口仍为 Codex。
 - 2026-06-22：GitHub 空仓库已完成首次初始化，代码推送到 `free-developer-king/jiaocheng` 的 `main` 分支；本地 `main` 已跟踪 `origin/main`。
+- 2026-06-25：Netlify 生产站点已创建并部署，站点名为 `ailongge-tutorial`，正式地址为 https://ailongge-tutorial.netlify.app；首页、JavaScript 和微信二维码均验证返回 HTTP 200。Netlify 使用 `netlify.toml` 执行 `npm run build` 并仅发布 `dist`。
+- Netlify 本地站点关联保存在被 `.gitignore` 排除的 `.netlify/`；登录凭据由 Netlify CLI 管理，项目文件和记忆不记录凭据值。
 
 ## 外部资源
 
@@ -50,6 +53,7 @@
 - 统一教程站：https://ailongge.vercel.app
 - 兼容地址：https://ai-longge-tutorial.vercel.app
 - GitHub 仓库：https://github.com/free-developer-king/jiaocheng
+- Netlify 站点：https://ailongge-tutorial.netlify.app
 
 ## 待确认
 

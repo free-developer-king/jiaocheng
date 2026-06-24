@@ -28,4 +28,4 @@
 - 项目名：AI卷王龙哥教程站。
 - 工作区：`/Users/longge/Documents/教程`。
 - 初始化日期：2026-06-22。
-- 技术栈：原生 HTML、CSS、JavaScript；无第三方运行时依赖；Vercel 静态部署。
+- 技术栈：原生 HTML、CSS、JavaScript；无第三方运行时依赖；Vercel 与 Netlify 静态部署。
